@@ -142,6 +142,7 @@ export default function Form() {
         <input
           type='checkbox'
           name='terms'
+          value='terms'
           checked={formState.terms}
           onChange={inputChange}
         />
@@ -149,7 +150,7 @@ export default function Form() {
       </label>
       {/* displaying our post request data */}
       <pre>{JSON.stringify(post, null, 2)}</pre>
-      <button disabled={buttonDisabled}>Submit</button>
+      <button className='submitButton' disabled={buttonDisabled}>Submit</button>
     </form>
   );
 }
